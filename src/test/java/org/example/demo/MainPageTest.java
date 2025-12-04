@@ -53,7 +53,7 @@ public class MainPageTest {
     }
 
 
-    /*@Test
+    @Test
     public void search() {
         // 1. Clica no botão de pesquisa (lupa)
         wait.until(ExpectedConditions.elementToBeClickable(mainPage.searchButton)).click();
@@ -72,10 +72,10 @@ public class MainPageTest {
         // 5. Valida o resultado
         WebElement searchPageField = wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector("input[data-test-id='search-input']")));
         assertEquals("Selenium", searchPageField.getAttribute("value"));
-    }*/
+    }
 
 
-   /* @Test
+   @Test
     public void toolsMenu()throws TimeoutException {
         // 1. Clica no item de menu "Developer Tools"
         wait.until(ExpectedConditions.elementToBeClickable(mainPage.toolsMenu)).click();
@@ -86,7 +86,7 @@ public class MainPageTest {
 
         // 3. Asserção
         assertTrue(menuPopup.isDisplayed());
-    }*/
+    }
 
     @Test
     public void navigationToAllTools() {
