@@ -25,6 +25,8 @@ public class MainPageTest {
         mainPage = new MainPage(driver);
     }
 
+
+
     @AfterEach
     public void tearDown() {
         driver.quit();
