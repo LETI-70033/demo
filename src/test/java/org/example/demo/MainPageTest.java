@@ -123,4 +123,5 @@ public class MainPageTest {
         assertTrue(pageTitle.isDisplayed());
         assertEquals("Find the right tool", pageTitle.getText().trim());
     }
+
 }
