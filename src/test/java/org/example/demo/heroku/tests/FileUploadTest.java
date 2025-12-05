@@ -31,7 +31,7 @@ public class FileUploadTest {
     @Test
     public void uploadFileSuccessfully() {
         // ficheiro de teste dentro do projeto
-        File file = new File("src/test/resources/test-file.txt");
+        File file = new File("src/test/resources/allure.properties.txt");
 
         // garantir que o ficheiro existe
         assertTrue(file.exists(), "O ficheiro de teste não existe!");
@@ -39,6 +39,6 @@ public class FileUploadTest {
         page.uploadFile(file.getAbsolutePath());
 
         assertEquals("File Uploaded!", page.getResultTitleText());
-        assertEquals("test-file.txt", page.getUploadedFileName());
+        assertEquals("allure.properties.txt", page.getUploadedFileName());
     }
 }
